@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v6.4.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    {{-- <link href="{{ asset('css/master.css') }}" rel="stylesheet"> --}}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+    <script src="{{ asset('vendor/event/js/bootstrap-datetimepicker.min.js') }}"></script>
+    <script src="{{ asset('vendor/event/js/parsley.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/templateHome.css') }}">
+    <link href="{{ asset('css/formtask.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/workspace.css') }}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand px-1" href="#">
+                    <img src="{{ asset('images/logo_studnest.png') }}" alt="StudNest" width="20%" height="20%"
+                        class="d-inline-block align-text-top">
+                    <b>StudNest</b>
+                </a>
+                <div class="navbar-nav ms-auto pr-5">
+                    <a>
+                        <i class="fas fa-user mr-3"></i>
+                        Nama
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="row mt-1">
+        <div class="sidebar position-sticky sidebar-sticky col-md-2">
+            <nav class="nav nav-pills flex-column ml-4">
+                <a class="choose nav-link mb-2" aria-current="page" href="#">
+                    <i class="fa-solid fa-folder-open mr-3"></i>
+                    Workspace</a>
+                <a class="nav-link mb-2" href="#">
+                    <i class="fas fa-file mr-3"></i>
+                    SN Merger</a>
+                <a class="nav-link mb-2" href="#">
+                    <i class="fas fa-calendar-alt mr-3"></i>
+                    Calendar</a>
+                <a class="nav-link mr-2">
+                    <i class="fa-sharp fa-solid fa-circle-notch mr-3"></i>
+                    Trackgres</a>
+                <a class="nav-link mb-2">
+                </a>
+                <a class="nav-link mb-2">
+                    <i class="fa-solid fa-arrow-right-from-bracket mr-3"></i>
+                    Log Out</a>
+            </nav>
+        </div>
+        <div class="content col-md-10">
+            <div class="form-box">
+                <div class="flex-column mt-5">
+                    <div class="container">
+                        <a href="/workspace" class="ml-4 mb-5" id="back-button" role="button">Back</a>
+                    </div>
+                </div>
+                <div class="flex-column m-1">
+                    <div class="container">
+                        <form action="/workspace/task/form/store" method="post">
+                            {{ csrf_field() }}
+                            <div class="form-group m-4">
+                                <label for="taskname" id="input-title">Task name:</label>
+                                <input type="taskname" class="form-control" id="Name"
+                                    placeholder="Enter your workspace name" name="Name" required aria-required="true"
+                                    required="required">
+                            </div>
+                            <div class="form-group m-4">
+                                <label for="taskdesc" id="input-title">Description:</label>
+                                <input type="taskdesc" class="form-control" id="Description"
+                                    placeholder="Enter your workpsace description" name="Description"
+                                    {{-- required aria-required="true" required="required" --}}>
+                            </div>
+                            <div class="felx-row d-flex justify-content-between">
+                                <div class="form-group m-4">
+                                    <label for="taskdeadline" id="input-title">Deadline:</label>
+                                    <input type="taskdeadline" class="form-control" id="Deadline"
+                                        placeholder="DD/MM/YY" name="Deadline" {{-- required aria-required="true" required="required" --}}>
+                                </div>
+                                <div class="form-group m-4">
+                                    <label for="taskmembers" id="input-title">Members:</label>
+                                    <input type="taskmembers" class="form-control" id="Member"
+                                        placeholder="@Username" name="Member" {{-- required aria-required="true" required="required" --}}>
+                                </div>
+                            </div>
+                            <div class="flex-column" id="submit">
+                                <input type="submit" class="submit-button" value="Create new task">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

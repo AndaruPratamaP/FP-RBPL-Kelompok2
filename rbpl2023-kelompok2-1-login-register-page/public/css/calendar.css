@@ -1,0 +1,32 @@
+body{
+    background: linear-gradient(to top right, #A4C5FD4D, #8FC6FD4D,#E0C4FD4D);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    /* margin: 0; */
+}
+
+.row{
+height: 91vh;
+}
+
+.navbar-brand{
+    font-size: 100%;
+    color: black;
+}
+.sidenav{
+    position: fixed;
+    overflow: auto;
+}
+.nav-link{
+    color: #858585;
+}
+.choose{
+    background-color: white;
+    color: #5CA9FF;
+}
+.content{
+    background-color: rgba(255,255, 255, 0.6);
+    height: max-content;
+    min-height: 100%;
+    border-radius: 30px 0px 0px 0px;
+}

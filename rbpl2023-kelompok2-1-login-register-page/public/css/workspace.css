@@ -1,0 +1,93 @@
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #1F2128;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    color: #7C7F89;
+}
+
+.desc {
+    font-weight: 400;
+    font-size: 13px;
+    color: #1F2128;
+}
+
+.moreBtn {
+    font-weight: 600;
+    font-size: 13px;
+    color: #5390EB;
+    background: none;
+    border: none;
+}
+
+.tasklabel {
+    width: 88%;
+    border: 1px solid #DADADA;
+    border-radius: 100px;
+
+    font-size: 13px;
+
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #dadada;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 9px;
+    color: white;
+    content: "\f00c";
+    display: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #589BFF;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+.box{
+    width: 88%;
+    background: #ffffff;
+    border-radius: 10px;
+
+    color: #1F2128;
+    font-size: 13px;
+}
+
+.status-box{
+    background: #E5F0FF;
+    border-radius: 100px;
+    width: 20%;
+    color: #589BFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#check-area{
+    width: min-content;
+}

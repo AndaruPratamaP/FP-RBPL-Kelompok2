@@ -1,0 +1,113 @@
+.form-box {
+    position: absolute;
+    width: 50vw;
+    height: 70vh;
+    background: #E0EEFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+
+}
+
+#back-button {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #589BFF;
+    border-radius: 32px;
+    width: 5vw;
+    height: 3.5vh;
+
+    color: #589BFF;
+    font-size: 12px;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-title{
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#input-title {
+    font-weight: 700
+}
+
+#taskname{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #589BFF;
+    border-radius: 10px;
+}
+
+/*support google chrome*/
+#taskname::-webkit-input-placeholder {
+    color: #589BFF;
+    font-size: 14px;
+}
+
+/*support mozilla*/
+#taskname:-moz-input-placeholder {
+    color: #589BFF;
+    font-size: 14px;
+}
+
+/*support internet explorer*/
+#taskname:-ms-input-placeholder {
+    color: #589BFF;
+    font-size: 14px;
+}
+
+#taskdesc{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #589BFF;
+    border-radius: 10px;
+}
+
+/*support google chrome*/
+#taskdesc::-webkit-input-placeholder {
+    color: #589BFF;
+    font-size: 14px;
+}
+
+/*support mozilla*/
+#taskdesc:-moz-input-placeholder {
+    color: #589BFF;
+    font-size: 14px;
+}
+
+/*support internet explorer*/
+#taskdesc:-ms-input-placeholder {
+    color: #589BFF;
+    font-size: 14px;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+#submit {
+    /* margin-top: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    width: 25vw;
+    height: 9vh;
+
+    background: linear-gradient(260.9deg, #E0C4FD 18.67%, #A4C5FD 76.85%, #8FC6FD 96.79%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 81.5px;
+    border: none;
+
+    color: #FFFFFF;
+    font-weight: 600;
+}

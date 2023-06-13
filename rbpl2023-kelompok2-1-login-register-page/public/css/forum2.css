@@ -1,0 +1,84 @@
+.title{
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.list{
+    margin: 25px;
+    width: 1420px;
+    height: 50px;
+    border-radius: 30px 30px 30px 30px;
+    background: #FFFF ;
+    padding-top: 12px;
+    padding-left: 30px;
+    border-style:solid;
+	border-width: 2px;
+    border-color: #8FC6FD4D;
+}
+
+.tambahWS{
+    margin: 25px;
+    width: 1420px;
+    height: 50px;
+    background: conic-gradient(from 219.51deg at 43.09% 62.83%, #E0C4FD -16.5deg, #D2C4FD 8.63deg, #8FC6FD 78.9deg,
+    #9DC6FD 162.87deg, #D5C4FD 190.06deg, #A4C5FD 268.13deg, #E0C4FD 343.5deg, #D2C4FD 368.63deg);
+    border-color: #A4C5FD4D;
+    padding-top: 5px;
+    padding-left: 30px;
+    color: white;
+    border-radius: 30px;
+}
+
+.bubble-comment{
+    background: #FFFF;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 1%;
+    margin-left: 7%;
+    padding: 15px;
+    background-color: #E0EEFF;
+}
+
+.bubble-reply{
+    background: #FFFF;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 1%;
+    margin-left: 9.5%;
+    padding: 15px;
+    background-color: #fdecff;
+}
+
+.reply-button{
+    background-color: Transparent;
+    /* background-repeat:no-repeat; */
+    border: none;
+    margin-left: 7%;
+    margin-bottom: 1%;
+}
+
+.add{
+    background-color: #FFFF;
+    border-color: #A4C5FD4D;
+    border-radius: 20px 20px 20px 20px;
+    /* width: 50%;
+    margin-left: 2%;
+    bottom: 5px; */
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    width: 88%;
+    height: 5%;
+}
+
+.send-button{
+    background-color: #FFFF;
+    border-color: #A4C5FD4D;
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    position: absolute;
+    bottom: 5%;
+    left: 92%;
+    width: 5%;
+    height: 5%;
+}
